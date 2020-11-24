@@ -1,0 +1,22 @@
+---
+title: "Group 14 CA pollution burden"
+author: "Kat Cotti & Jake Niyri"
+date: "11/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+```{r}
+#Read in the data as an object 'ces' using here:
+ces <- read.csv(here("data", "ces3demographics.csv")) %>% 
+  
+#Convert column headers to lower snake case:
+janitor::clean_names()
+```
+
