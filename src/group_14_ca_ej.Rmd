@@ -20,3 +20,13 @@ ces <- read.csv(here("data", "ces3demographics.csv")) %>%
 janitor::clean_names()
 ```
 
+```{r}
+#Create a plot object to view the data
+#Note that this looks REAAAALLLY weird....
+percent_white_plot <- ces %>%
+  ggplot(aes(x=white, y=ces_3_0_score))+
+  geom_point()
+
+percent_white_plot
+```
+
