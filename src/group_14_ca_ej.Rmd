@@ -28,9 +28,10 @@ percent_white_plot <- ces %>%
   geom_hex() + #Update graph type to 2D hexbin 
   
   #formatting graph with aaalllll the pretties
-  scale_fill_gradient(low="darkorchid4", high = "magenta")+  #adjust fill
-  labs(x = "White Population Percentage \n (Based on 2010 Census Data) ", y = "CalEnviroScreen Pollution Burden Score \n (CES 3.0 Score)")#+  #label graph with appropriate axis labels
-  #theme_minimal()   #this does not in any way adjust the theme to a minimal setting
+  scale_fill_gradient(low="navy", high = "orange") +  #adjust fill
+  labs(x = "White Population Percentage \n (Based on 2010 Census Data) ", y = "CalEnviroScreen Pollution Burden Score \n (CES 3.0 Score)", title = "Relationship between the Aggregate CalEnviroScreen 3.0 Pollution Burden \n Score  & White Population Percentage in California") +  #label graph with appropriate axis labels & title 
+  theme_minimal() #this does not in any way adjust the theme to a minimal setting
+ 
 
 percent_white_plot
 ```
