@@ -35,4 +35,4 @@ percent_white_plot <- ces %>%
 
 percent_white_plot
 ```
-
+The trends displayed in this figure indicate that as the overall percentage of a census tracts' white population increases, the pollution burden on that tract decreases. Or, in other words, areas with a lower percentage of white residents tend to have higher pollution burdens.
