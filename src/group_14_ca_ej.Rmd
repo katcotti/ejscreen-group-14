@@ -25,8 +25,8 @@ janitor::clean_names()
 #Note that this looks REAAAALLLY weird....
 percent_white_plot <- ces %>%
   ggplot(aes(x=white, y=ces_3_0_score))+
-  geom_point()
-
+  geom_hex() + #Update graph type to 2D hexbin 
+  labs(x = "White Population Percentage \n (Based on 2010 Census Data) ", y = "CalEnviroScreen Pollution Burden Score \n (CES 3.0 Score)") #label graph with appropriate axis labels
 percent_white_plot
 ```
 
