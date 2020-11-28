@@ -22,11 +22,16 @@ janitor::clean_names()
 
 ```{r}
 #Create a plot object to view the data
-#Note that this looks REAAAALLLY weird....
+
 percent_white_plot <- ces %>%
   ggplot(aes(x=white, y=ces_3_0_score))+
   geom_hex() + #Update graph type to 2D hexbin 
-  labs(x = "White Population Percentage \n (Based on 2010 Census Data) ", y = "CalEnviroScreen Pollution Burden Score \n (CES 3.0 Score)") #label graph with appropriate axis labels
+  
+  #formatting graph with aaalllll the pretties
+  scale_fill_gradient(low="darkorchid4", high = "magenta")+  #adjust fill
+  labs(x = "White Population Percentage \n (Based on 2010 Census Data) ", y = "CalEnviroScreen Pollution Burden Score \n (CES 3.0 Score)")#+  #label graph with appropriate axis labels
+  #theme_minimal()   #this does not in any way adjust the theme to a minimal setting
+
 percent_white_plot
 ```
 
